@@ -1,0 +1,50 @@
+
+  #footer {
+    background: black;
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    padding-left: 5em;
+    padding-right: 5em;
+    text-justify: auto;
+  }
+  
+  .tagline {
+    font-weight: bold;
+  }
+  
+  .tagline:hover {
+    color: rgb(177, 130, 130);
+    transition: 0.6s;
+  }
+  
+  .explore li {
+    list-style: none;
+    text-align: center;
+    text-justify: auto;
+    padding-right: 35px;
+    margin-top: 15px;
+  }
+  
+  .explore li a {
+    text-decoration: none;
+    text-justify: auto;
+    color: grey;
+  }
+  
+  .explore li a:hover {
+    color: red;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  
+  .color-swap {
+    color: gray;
+  }
+  
+  #made-with {
+    margin-top: 1.2cm;
+  }
+  

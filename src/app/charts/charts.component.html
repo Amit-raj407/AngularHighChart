@@ -1,0 +1,160 @@
+<!-- ChartsJS Section -->
+<section id="section_1">
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-md-12 mb-3">
+                <div class="card border-0 h-50 chart_card">
+                    <h4>Yearly Appraisal Comparision</h4>
+                    <canvas id="myChart_1" style="width:100%;max-width:600px"></canvas>
+                </div>
+                <div class="card border-0 mt-2 h-50 chart_card">
+                    <h4>Weekly Working Hours</h4>
+                    <canvas id="myChart_3" style="width:100%;max-width:600px"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-3">
+                <div class="card border-0 chart_card h-50">
+                    <h4>Work Activities</h4>
+                    <canvas id="myChart_2" class="m-auto" style="width:100%;max-width:300px"></canvas>
+                </div>
+                <div class="card border-0 mt-2 h-50 chart_card">
+                    <h4>Work Category</h4>
+                    <canvas id="myChart_4" class="m-auto" style="width:100%;max-width:300px"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mid Section -->
+<section>
+    <div class="container">
+        <div class="card overview_card">
+            <h4>Work Overview</h4>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                    <div class="card border-0 h-100 bg-success task-card">
+                        <h4>Requests Resolved<i class="far fa-check-circle text-light px-2"></i></h4>
+                        <h1>29</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                    <div class="card border-0 h-100 bg-warning task-card">
+                        <h4>Requests Pending<i class="fas fa-tachometer-alt text-light px-2"></i></h4>
+                        <h1>15</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                    <div class="card border-0 h-100 bg-danger task-card">
+                        <h4>High Priority Tasks<i class="fas fa-exclamation-circle text-light px-2"></i></h4>
+                        <h1>9</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                    <div class="card border-0 h-100 bg-secondary task-card">
+                        <h4>Currently Assigned<i class="fas fa-tasks text-light px-2"></i></h4>
+                        <h1>34</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <h5><i class="fas fa-arrow-up text-success px-2"></i>27% Efficiency Increased</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Table Section -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mt-3">
+                <div class="card border-0 h-100 overview_card">
+                    <h3><i class="fas fa-clipboard-list text-dark px-2"></i>ToDo</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox" [(ngModel)]="masterSelected" name="list_name" value="m1"
+                                    (change)="checkUncheckAll()" />
+                                </th>
+                                <th scope="col">#</th>
+                                <th scope="col">Task</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" [(ngModel)]="checklist[0]" name="list_name" value="{{checklist[0].id}}"
+                                    (change)="isAllSelected()" />
+                                </td>
+                                <th scope="row">1</th>
+                                <td>Lorem</td>
+                                <td>Ipsum</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" [(ngModel)]="checklist[1]" name="list_name" value="{{checklist[1].id}}"
+                                    (change)="isAllSelected()" />
+                                </td>
+                                <th scope="row">2</th>
+                                <td>Neque</td>
+                                <td>random</td>
+                                <td>In Progress</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" [(ngModel)]="checklist[2]" name="list_name" value="{{checklist[2].id}}"
+                                    (change)="isAllSelected()" />
+                                </td>
+                                <th scope="row">3</th>
+                                <td>quasi</td>
+                                <td>beatae</td>
+                                <td>Completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-3">
+                <div class="card border-0 h-100 overview_card">
+                    <h3><i class="fas fa-rupee-sign text-dark px-2"></i>Revenue</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Sales</th>
+                                <th scope="col">Profit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Lorem</td>
+                                <td>24</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Neque</td>
+                                <td>255</td>
+                                <td>56%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>quasi</td>
+                                <td>431</td>
+                                <td>31%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

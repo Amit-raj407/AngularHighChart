@@ -1,0 +1,32 @@
+<div class="container contact-card">
+
+
+    <div class="card login-full">
+        <div class="">
+            <h1 class="text-center">Contact Us</h1>
+        </div>
+        <div class="card-body login-card">
+            <form #f="ngForm" (ngSubmit)="onSubmit()" autocomplete="off">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control field shadow-none" name="userName" id="floatingInput"
+                        placeholder="name@example.com" ngModel #uName="ngModel" required>
+                    <label for="floatingInput">Your Email address</label>
+                </div>
+                <!-- {{uName.valid}} -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control field shadow-none" name="password" id="floatingPassword"
+                        ngModel #uPass="ngModel" placeholder="query" required>
+                    <label for="floatingPassword">Your Query</label>
+                </div>
+                <!-- {{uPass.valid}} -->
+                <div class="btn-div">
+                    <button id="btn" class="btn" [disabled]="!f.valid">Submit</button>
+                    <!-- <input type="submit" value="Submit" id="btn"> -->
+                </div>
+                <!-- {{f.valid}}
+                    {{f.value | json}} -->
+            </form>
+        </div>
+    </div>
+
+</div>
