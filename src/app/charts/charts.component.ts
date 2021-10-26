@@ -164,7 +164,7 @@ export class ChartsComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.buildCharts();
+    // this.buildCharts();
 
   }
 

@@ -1,0 +1,72 @@
+.user-details {
+  margin-top: 80px;
+}
+
+.form-card,
+.details-table {
+  padding: 20px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 250, 250, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.btn-icon {
+  color: #edac23;
+  background-color: #ffffff;
+  border-color: #edac23;
+  border-radius: 50%;
+  transition: 0.3s;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.btn-icon:hover {
+  color: #ffffff;
+  background-color: #edac23;
+  border-color: #edac23;
+  box-shadow: 6px 4px 20px 0px rgba(0, 0, 0, 0.29);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(85, 83, 83);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.form-control {
+  box-shadow: inset 0 -1px 0 rgb(59, 238, 5);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form-control-error {
+  box-shadow: inset 0 -1px 0 rgb(255, 0, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

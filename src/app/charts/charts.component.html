@@ -4,21 +4,22 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-6 col-md-12 mb-3">
-                <div class="card border-0 h-50 chart_card">
-                    <h4>Yearly Appraisal Comparision</h4>
-                    <canvas id="myChart_1" style="width:100%;max-width:600px"></canvas>
+                <div class="card border-0 chart_card">
+                    <!-- <h4>Yearly Appraisal Comparision</h4> -->
+                    <app-dualaxe></app-dualaxe>
                 </div>
-                <div class="card border-0 mt-2 h-50 chart_card">
-                    <h4>Weekly Working Hours</h4>
-                    <canvas id="myChart_3" style="width:100%;max-width:600px"></canvas>
+                <div class="card border-0 mt-2 chart_card">
+                    <app-column-comparision></app-column-comparision>
+                   
+                    <!-- <canvas id="myChart_3" style="width:100%;max-width:600px"></canvas> -->
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 mb-3">
-                <div class="card border-0 chart_card h-50">
-                    <h4>Work Activities</h4>
-                    <canvas id="myChart_2" class="m-auto" style="width:100%;max-width:300px"></canvas>
+                <div class="card border-0 chart_card">
+                    <app-variablepie></app-variablepie>
+                    <!-- <canvas id="myChart_2" class="m-auto" style="width:100%;max-width:300px"></canvas> -->
                 </div>
-                <div class="card border-0 mt-2 h-50 chart_card">
+                <div class="card border-0 mt-2 chart_card">
                     <h4>Work Category</h4>
                     <canvas id="myChart_4" class="m-auto" style="width:100%;max-width:300px"></canvas>
                 </div>
@@ -158,3 +159,5 @@
         </div>
     </div>
 </section>
+
+<app-dualaxe></app-dualaxe>

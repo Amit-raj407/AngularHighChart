@@ -10,6 +10,7 @@ import { PostsModule } from '../posts/posts.module';
 import { ProfileModule } from '../profile/profile.module';
 import { ContactModule } from '../contact/contact.module';
 import { SettingsModule } from '../settings/settings.module';
+import { UserDetailsModule } from '../user-details/user-details.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SettingsModule } from '../settings/settings.module';
     PostsModule,
     ProfileModule,
     ContactModule,
-    SettingsModule
+    SettingsModule,
+    UserDetailsModule
   ]
 })
 export class DashboardModule { }

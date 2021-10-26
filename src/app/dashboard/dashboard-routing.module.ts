@@ -10,11 +10,12 @@ const routes: Routes = [
     children:
     [
       { path: '', redirectTo: 'charts', pathMatch: 'full' },
-      { path: 'charts', canActivate: [AuthGuard],  loadChildren: () => import('../charts/charts.module').then(m => m.ChartsModule) },
+      { path: 'charts',  loadChildren: () => import('../charts/charts.module').then(m => m.ChartsModule) },
       { path: 'posts', canActivate: [AuthGuard],  loadChildren: () => import('../posts/posts.module').then(m => m.PostsModule) },
       { path: 'profile', canActivate: [AuthGuard],  loadChildren: () => import('../profile/profile.module').then(m => m.ProfileModule) },
       { path: 'contact', canActivate: [AuthGuard],  loadChildren: () => import('../contact/contact.module').then(m => m.ContactModule) },
-      { path: 'settings', canActivate: [AuthGuard],  loadChildren: () => import('../settings/settings.module').then(m => m.SettingsModule) }
+      { path: 'settings', canActivate: [AuthGuard],  loadChildren: () => import('../settings/settings.module').then(m => m.SettingsModule) },
+      { path: 'user-details', loadChildren: () => import('../user-details/user-details.module').then(m => m.UserDetailsModule) },
     ]
   }
 ];
